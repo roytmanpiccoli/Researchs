@@ -1,8 +1,8 @@
 #  Learn About Minikube [^1]
 
-[^1.1] terms
-[^1.2] Minikube Questions
-[^1.3] Command lines
+- [^1.1] terms
+- [^1.2] Minikube Questions
+- [^1.3] Command lines
 
 [^1.1]  Principal Terms 
 - The term `Master node` are same `Control Plane`
