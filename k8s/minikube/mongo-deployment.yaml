@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: mongo-deployment
+  labels: 
+    app: mongodb
+spec:
+  replicas: 3
+  selector: 
+    matchLabels:
+      app: mongodb
+  template:
+    metadata:
+      labels:
+        app: mongodb
+    spec: 
+      containers: 
+      - name: mongodb
+        image: mongo:5.0
+        ports:
+        - containerPort: 27017
+
+# Can use Other Service like this
+---
+# This is Endpoint Service for DNS resolution
+apiVersion: v1
+kind: Sevice
+metadata:
+  name: mongo-service
+spec:
+  selector:  # This is for inentify service at alb of service
+    app: mongo
+  ports:
+    metadata:
+      - protocol: TCP
+        port: 80 
+        targetPort: 27017  # Each Port are exposed Application

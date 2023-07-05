@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Sevice
+metadata:
+  name: mongo-service
+spec:
+  selector:  # This is for inentify service at alb of service
+    app: mongo
+  ports:
+    metadata:
+      - protocol: TCP
+        port: 80 
+        targetPort: 27017  # Each Port are exposed Application

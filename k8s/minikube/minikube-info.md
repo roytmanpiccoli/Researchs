@@ -9,6 +9,7 @@
 
 [^1.1]: Principal Terms 
 - The term `Master node` are same `Control Plane`
+- The term `template` is configuration of the `pod`
 
 
 [^1.2]:Questions
@@ -19,7 +20,9 @@ What is Kubectl? **Kubectl** is Commend line tool for a cluster configuration.
 **Command Start minikube** `minikube start --driver docke`
 **Verify Status of minikube** `minikube status`
 **Verify Nodes ** `kubectl get node`
-
+**Enconding command for Secret** `echo -n mongouser | base64`
+**Enconding command for Secret** `echo -n mongopassword | base64`
+Past de result of this command at secret.yml 
 
 [^1.4]:Info Note
 > If you desire use other drive just change name in --driver 
@@ -34,7 +37,15 @@ What is Kubectl? **Kubectl** is Commend line tool for a cluster configuration.
 Installation and Creation Minikube [Minikube Documentation](https://kubernetes.io/fr/docs/tasks/tools/install-minikube/).
 
 [^1.5]: Create a components 
-- [ConfigMap](./configmap.md)
-- [Secret](./secret.md)
-- [Mongodb Yml](./mongodb.yml)
-- [WebApp + External Sevice](./web-appt.yml)
+- [ConfigMap](./mongo-config.yaml)
+- [Secret](./mongo-secret.yaml)
+- [Mongodb Yml](./mongo-deployment.yaml)
+- [WebApp + External Sevice](./mongo-service.yaml)
+
+### service Request ports
+|----request-----|
+        | port: 8080
+|----Service-----|
+        | targetPort: 27017
+|------Pod-------|
+        | containerPort: 27017
