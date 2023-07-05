@@ -1,4 +1,20 @@
+# Minikube Information
+#RRGGBB	#0969DA
 Master node = control Plane
+
+
+## Start Minikube
+To start Minikube and create a Kubernetes cluster, use the following command:
+
+## Check Cluster Status
+
+For more information, refer to the [Minikube Documentation](https://minikube.sigs.k8s.io/docs/).
+
+
+To check the status of your Minikube cluster, run:
+
+To start Minikube and create a Kubernetes cluster, use the following command:
+
 
 Minikube is one Node =  Minikube is a tool that enables you to run a single-node Kubernetes cluster locally on your machine.
 
