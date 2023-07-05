@@ -1,42 +1,32 @@
-# Minikube Information
-#RRGGBB	#0969DA
-Master node = control Plane
+#  Learn About Minikube [^1]
+
+[^1.1] terms
+[^1.2] Minikube Questions
+[^1.3] Command lines
+
+[^1.1]  Principal Terms 
+- The term `Master node` are same `Control Plane`
+* John Adams
++ Thomas Jefferson
+
+[^1.2]:Questions
+What is Minikube? **Minikube** is one Node  is a tool that enables you to run a single-node Kubernetes cluster locally on your machine
+What is Kubectl? **Kubectl** is Commend line tool for a cluster configuration.
+
+[^1.3]: Command Lines 
+**Command Start minikube** `minikube start --driver docke`
+**Verify Status of minikube** `minikube status`
+
+Info Note
+> If you desire use other drive just change name in --driver 
+1. Hypervisor avaliable:
+   - VirtualBox: If you're using VirtualBox as your hypervisor, open-source virtualization platform.
+   - KVM: For Linux systems, you can use KVM (Kernel-based Virtual Machine) as the hypervisor.
+   - HyperKit: If you're on macOS, you can use HyperKit as the hypervisor. 
+   - Hyper-V: If you're using Windows 10 or Windows Server 2016
+   - Docker: Minikube also provides an option to run Kubernetes directly on your local Docker engin
 
 
-## Start Minikube
-To start Minikube and create a Kubernetes cluster, use the following command:
-
-## Check Cluster Status
-
-For more information, refer to the [Minikube Documentation](https://minikube.sigs.k8s.io/docs/).
+Installation and Creation Minikube [Minikube Documentation](https://kubernetes.io/fr/docs/tasks/tools/install-minikube/).
 
 
-To check the status of your Minikube cluster, run:
-
-To start Minikube and create a Kubernetes cluster, use the following command:
-
-
-Minikube is one Node =  Minikube is a tool that enables you to run a single-node Kubernetes cluster locally on your machine.
-
-Kubectl = commend line tool for a cluster configuration.
-
-Installation and Creation Minikube
-https://kubernetes.io/fr/docs/tasks/tools/install-minikube/
-
-
- hypervisos per system name 
-
-VirtualBox: If you're using VirtualBox as your hypervisor, open-source virtualization platform.
-
-KVM: For Linux systems, you can use KVM (Kernel-based Virtual Machine) as the hypervisor.
-
-HyperKit: If you're on macOS, you can use HyperKit as the hypervisor. 
-
-Hyper-V: If you're using Windows 10 or Windows Server 2016
-
-Docker: Minikube also provides an option to run Kubernetes directly on your local Docker engine. 
-When installing Minikube, the driver selection is typically part of the installation process.
-
-Command Start : minikube start --driver docker 
-Note : If you desire use other drive just change name in command
-Verify is all are installed command : minikube status 
