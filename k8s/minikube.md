@@ -1,13 +1,14 @@
 #  Learn About Minikube [^1]
 
+[^1]: A second-level heading 
 - [^1.1] terms
 - [^1.2] Minikube Questions
 - [^1.3] Command lines
 
-[^1.1]  Principal Terms 
+[^1.1]: Principal Terms 
 - The term `Master node` are same `Control Plane`
-* John Adams
-+ Thomas Jefferson
+* 
++
 
 [^1.2]:Questions
 What is Minikube? **Minikube** is one Node  is a tool that enables you to run a single-node Kubernetes cluster locally on your machine
